@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +37,192 @@
   to {
     transform: rotate(360deg);
   }
+}
+.counter_box,.check_in_box,.login-box,.todo_box{
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef1f2;
+}
+.counter_container{
+  background-color: #dad7d7;
+  border-radius: 5px;
+  padding: 60px 150px 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.counter_button{
+  padding: 10px 40px;
+  margin: 20px 10px 0px;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #28803D;
+}
+.value_button{
+  background-color: #ffcac8;
+  color: black;
+}
+.reset_button{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 90px;
+  background-color: #28803D;
+  text-align: center;
+}
+
+.todo_box ul li{
+  list-style: none;
+}
+.input_text{
+  padding:5px 10px;
+  height: 20px;
+  width: 250px;
+  outline: none;
+  border: 0;
+}
+.todo_list{
+  margin-top: 30px;
+}
+.output{
+  padding:5px 10px;
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+
+  /* height: 20px;
+  width: 100px; */
+  outline: none;
+}
+.add_button,.button{
+  margin-left: 20px;
+  padding: 8px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  background-color: rgb(185, 205, 206);
+  font-size: 14px;
+  font-weight: bold;
+}
+.todo_container ul{
+  margin: 0 auto;
+  /* background-color: #CDD4DA; */
+  border-radius: 5px;
+  width: fit-content;
+  padding:20px;
+}
+ul .list_item{
+  background-color: #e7edee;
+  width: fit-content;
+  border-bottom: 2px solid rgb(192, 191, 190);
+  padding: 10px 0px;
+  margin: 0 auto;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.fetch_container h1{
+  text-align: center;
+  text-decoration: underline;
+}
+.fetch_container p{
+  padding-bottom: 15px;
+}
+.form_container{
+  text-align: center;
+}
+.form_label_input {
+  padding: 10px 0px 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form_label_input label{
+  padding-bottom: 15px;
+}
+.form_label_input input{
+  height: 35px;
+  border: 0;
+  outline: none;
+  
+  padding: 2px 15px;
+  margin: 0px 70px;
+}
+.forgot_pass{
+  color: rgb(37, 37, 128);
+  cursor: pointer;
+}
+.login_button{
+  margin-top: 20px;
+  padding: 8px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  background-color: #67E8DC;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 40px 0px 10px;
+}
+.login_button:hover{
+  background-color: #16e3cf;
+}
+/* ...................header............. */
+.container{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+nav{
+  background-color: #e4e8e9;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.header a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* .............check_in_container............ */
+.check_in_container,.form_container,.todo_container{
+  background-color: #dad7d7;
+  border-radius: 5px;
+  width: 500px;
+  padding: 30px 50px 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.check_in_container h1{
+  padding-bottom: 30px;
+}
+/* ,.............accordian_items...................... */
+.accordian_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordian_items{
+  display: flex;
+  justify-content: space-between;
+}
+.accordian_items .plus{
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-size: 35px;
 }
